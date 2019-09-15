@@ -1,0 +1,18 @@
+;; Write the BSL expression that most clearly represents the following
+;; arithmetic expression:
+;;
+;;     3^2 + 6 * (6 - 10) / 3
+;;
+;; which equals 1
+;;
+;; There is a single BSL expression that both produces the correct result, 
+;; and most closely matches the structure of the equation given above.
+;; Although 1 is an expression that evaluates to 1, that is not the
+;; correct answer, because it doesn't show the structure of the expression
+;; above.
+;;
+
+
+;;My Answer
+
+(+ (/ (* (- 6 10) 6) 3) (sqr 3))
